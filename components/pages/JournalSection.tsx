@@ -38,18 +38,20 @@ const JournalSection = () => {
   const [date, setDate] = React.useState<Date>();
   const [diaryEntries, setDiaryEntries] = React.useState<
     { title: string; date: string; description: string; color: string }[]
-  >(() => {
+  >([]);
+
+  React.useEffect(() => {
     const storedEntries = localStorage.getItem("diaryEntries");
-    return storedEntries ? JSON.parse(storedEntries) : [];
-  });
+    setDiaryEntries(storedEntries ? JSON.parse(storedEntries) : []);
+  }, []); // Empty dependency array ensures that this effect runs only once on mount
 
   const handleFormSubmit = (event: React.FormEvent) => {
     event.preventDefault();
-
+  
     // Get the input values
     const inputText = (event.target as any).elements.inputText.value;
     const textareaText = (event.target as any).elements.textareaText.value;
-
+  
     // Validate and save the new entry
     if (inputText && textareaText) {
       const newEntry = {
@@ -58,18 +60,19 @@ const JournalSection = () => {
         description: textareaText,
         color: getRandomColor(),
       };
-
+  
       const newEntries = [...diaryEntries, newEntry];
       setDiaryEntries(newEntries);
-
+  
       // Update localStorage with the new entries
       localStorage.setItem("diaryEntries", JSON.stringify(newEntries));
-
+  
       // Clear the form
       setDate(undefined);
       (event.target as any).reset();
     }
   };
+  
 
   const handleDeleteEntry = (index: number) => {
     const updatedEntries = [...diaryEntries];
