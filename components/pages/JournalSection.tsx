@@ -82,7 +82,7 @@ const JournalSection = () => {
   };
 
   return (
-    <div className="flex flex-col w-full min-h-[100vh] gap-4 px-8 pb-2 ">
+    <div className="flex flex-col w-full min-h-full gap-4 px-8 py-20 bg-[#f5f4f0] ">
       <div className="flex flex-col justify-center items-center ">
         <h1 className="text-4xl font-bold">
           Kamu Dapat Mencurahkan Seisi hatimu disini 😉

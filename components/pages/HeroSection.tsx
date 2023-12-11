@@ -15,7 +15,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ heading, message }) => {
 
   return (
     <section id="hero">
-      <div className="relative flex w-full items-center min-h-[100vh] mb-[10rem] bg-fixed bg-center bg-cover hero-img">
+      <div className="relative flex w-full items-center min-h-[100vh] bg-fixed bg-center bg-cover hero-img">
         {/*Overlayer*/}
         <div className='absolute h-full top-0 left-0 right-0 bottom-0 bg-black/70 z-[2]'/>
         
