@@ -42,7 +42,7 @@ const RegisterPage = () => {
 
       <form onSubmit={handleSubmit}>
         <div className="flex flex-col px-20">
-          <h1 className="text-4xl font-bold mb-10 text-center">Daftar Akun</h1>
+          <h1 className="text-4xl font-bold mb-10 text-center">Mendaftar Akun Baru</h1>
           {error && <p className="text-red-500">{error}</p>}
 
           {/* Input Nama */}

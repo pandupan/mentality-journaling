@@ -37,7 +37,7 @@ const Page = () => {
     <div className="lg:mt-20 mt-40 flex flex-col justify-center container min-h-[100vh] "> 
       <div className="flex flex-col sm:px-20">
       {error && <p className="text-red-500">{error}</p>}
-        <h1 className="text-4xl font-bold mb-10 text-center">Login</h1>
+        <h1 className="text-4xl font-bold mb-10 text-center">Login Kedalam Akun Anda</h1>
         <form className="flex justify-center items-center flex-col gap-4" onSubmit={handleLogin}>
         <div className='w-[250px] sm:w-[400px]'>
             <div className="flex flex-col gap-2">
@@ -73,14 +73,9 @@ const Page = () => {
             </div>
           </div>
         </form>
-        <div className="flex flex-col gap-2 mt-4 py-4">
-          <button className="text-[#2683da] hover:underline">
-            Lupa Password?
-          </button>
-        </div>
         <div className="flex flex-col gap-2 mt-4  py-4">
           <p className="justify-center text-center items-center ">
-            Belum Punya Akun ?
+            Klik dibawah ini jika belum mendaftar
           </p>
           <a href="/register" className="text-[#2683da] text-center hover:underline">
             Daftar Akun
