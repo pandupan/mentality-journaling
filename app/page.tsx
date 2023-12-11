@@ -1,5 +1,6 @@
 import HeroSection from '@/components/pages/HeroSection'
 import JournalSection from '@/components/pages/JournalSection'
+import MoodSection from '@/components/pages/MoodSection'
 import QuotesSection from '@/components/pages/QuotesSection'
 import Image from 'next/image'
 
@@ -12,6 +13,7 @@ export default function Home() {
       />
       <JournalSection/>
       <QuotesSection/>
+      <MoodSection/>
     </div>
   )
 }

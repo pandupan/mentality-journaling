@@ -62,7 +62,7 @@ const QuotesSection = () => {
   };
 
   return (
-    <div className="relative flex justify-center items-center w-full h-[450px] sm:h-[650px] mb-20 z-[1]">
+    <div id='quote' className="relative flex justify-center items-center w-full h-[450px] sm:h-[650px] mb-20 z-[1]">
     <Swiper
       modules={[Pagination, Autoplay]}
       spaceBetween={10}

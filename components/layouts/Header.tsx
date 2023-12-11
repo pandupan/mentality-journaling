@@ -50,16 +50,16 @@ const Header = () => {
         
           <ul style={{color:`${textColor}`}} className='hidden sm:flex font-semibold mr-4'>
             <li className='flex justify-center items-center p-4 hover:text-[#96d9f0] hover:border-b-2 hover:border-[#96d9f0] transform hover:scale-110 hover:mt-2 hover:font-bold '>
-              Home
-            </li>
+              <Link href='/#hero'>Home</Link>
+            </li> 
             <li className='flex justify-center items-center p-4 hover:text-[#96d9f0] hover:border-b-2 hover:border-[#96d9f0] transform hover:scale-110 hover:mt-2 hover:font-bold '>
-              <Link href='#'>Journal</Link>
+              <Link href='/#journal'>Journal</Link>
             </li> 
             <li className='p-4 hover:text-[#96d9f0] hover:border-b-2 hover:border-[#96d9f0] transform hover:scale-110 hover:mt-2 hover:font-bold '>
-              <Link href='#projects'>Quotes</Link>
+              <Link href='/#quote'>Quotes</Link>
             </li>
             <li className='p-4 hover:text-[#96d9f0] hover:border-b-2 hover:border-[#96d9f0] transform hover:scale-110 hover:mt-2 hover:font-bold '>
-              <Link href='#about'>Mood Test</Link>
+              <Link href='/#mood'>Mood Test</Link>
             </li>
           </ul>
 

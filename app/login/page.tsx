@@ -34,7 +34,7 @@ const Page = () => {
 
 
   return (
-    <div className="lg:mt-20 mt-40 flex flex-col justify-center container "> 
+    <div className="lg:mt-20 mt-40 flex flex-col justify-center container min-h-[100vh] "> 
       <div className="flex flex-col sm:px-20">
       {error && <p className="text-red-500">{error}</p>}
         <h1 className="text-4xl font-bold mb-10 text-center">Login</h1>
@@ -43,7 +43,7 @@ const Page = () => {
             <div className="flex flex-col gap-2">
               <h3 className="font-semibold text-xl">Email</h3>
               <input
-                className="p-2 border-2 border-[#3fd592] rounded "
+                className="p-2 border-2 border-[#2683da] rounded "
                 type="email"
                 id="email" 
                 name="email"
@@ -53,7 +53,7 @@ const Page = () => {
             <div className="flex flex-col gap-2 mt-4">
               <h3 className="font-semibold text-xl">Password</h3>
               <input
-                className="p-2 border-2 border-[#3fd592] rounded "
+                className="p-2 border-2 border-[#2683da] rounded "
                 type="password" 
                 id="password" 
                 name="password"
@@ -63,7 +63,7 @@ const Page = () => {
             <div className="flex flex-col gap-2 mt-4 justify-center items-center px-32">
               <div className="flex justify-center">
                 <button 
-                  className="bg-[#3fd592] text-center text-white p-2 py-2 px-10"
+                  className="bg-[#2683da] text-center text-white p-2 py-2 px-10"
                   type='submit'
                   disabled={isLoading}
                 >
@@ -73,8 +73,8 @@ const Page = () => {
             </div>
           </div>
         </form>
-        <div className="flex flex-col gap-2 mt-4 border-b border-black py-4">
-          <button className="text-[#3fd592] hover:underline">
+        <div className="flex flex-col gap-2 mt-4 py-4">
+          <button className="text-[#2683da] hover:underline">
             Lupa Password?
           </button>
         </div>
@@ -82,7 +82,7 @@ const Page = () => {
           <p className="justify-center text-center items-center ">
             Belum Punya Akun ?
           </p>
-          <a href="/register" className="text-[#3fd592] text-center hover:underline">
+          <a href="/register" className="text-[#2683da] text-center hover:underline">
             Daftar Akun
           </a>
         </div>
