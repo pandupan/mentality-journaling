@@ -22,6 +22,7 @@ import {
   CardTitle,
 } from "@/components/ui/card"
 
+
 const getRandomColor = () => {
   // Generate a random color in hex format
   const letters = '0123456789ABCDEF';
@@ -33,6 +34,7 @@ const getRandomColor = () => {
 };
 
 const JournalSection = () => {
+  
   const [date, setDate] = React.useState<Date>();
   const [diaryEntries, setDiaryEntries] = React.useState<
     { title: string; date: string; description: string; color: string }[]
